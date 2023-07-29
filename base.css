@@ -1,0 +1,139 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.grid__column-2cot{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-10cot{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+.grid__column-2cotsp{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    width:20%;
+}
+/* CSS modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+}
+/* .modal.open{
+    display: flex;
+} */
+.modal__lopphu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+.modal__phanthan{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    z-index: 3;
+
+}
+/* Phần phân trang chung*/
+.phantrang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phantrang-item{
+    list-style: none;
+    margin: 0 8px;
+}
+.phantrang-item-hienmau .phantrang-item__link{
+    background-color: #ae4424;
+    color: white ;
+}
+.phantrang-item__link{
+    display: block;
+    text-decoration: none;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #855b5b;
+}
+.phantrang-item__link-icon{
+    color: #855b5b;
+}
+/* Phần cuối  */
+.phancuoi{
+    padding-top: 20px;
+    border-top: 6px solid #ae4424;
+    padding-bottom: 50px;
+}
+.phancuoi__tieude{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.phancuoi__tieude-noidung__chitiet-link{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #333;
+}
+.phancuoi__noidungapp{
+    display: block;
+    text-decoration: none;
+    color: #855b5b;
+    padding: 10px 0;
+}
+.phancuoi__noidungapp-icon{
+    font-size: 16px;
+}
+.phancuoi__noidungapp-chu{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.phancuoi__noidung-appkhac{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+.phancuoi__noidung-qrimg{
+    width: 80px;
+    object-fit: contain;
+}
+.phancuoi__noidung-appimg{
+    margin-left: 10px;
+    height: 20px;
+}
